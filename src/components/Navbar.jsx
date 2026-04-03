@@ -74,12 +74,17 @@ export default function Navbar() {
           className="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer"
           aria-label="Toggle menu">
           <motion.span
-            animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 6 : 0 }}
+            animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 8 : 0 }}
             transition={{ duration: 0.3 }}
             className="block w-6 h-0.5 bg-(--text-main) origin-center"
           />
           <motion.span
-            animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? -6 : 0 }}
+            animate={{ opacity: isOpen ? 0 : 1, scaleX: isOpen ? 0 : 1 }}
+            transition={{ duration: 0.3 }}
+            className="block w-6 h-0.5 bg-(--text-main) origin-center"
+          />
+          <motion.span
+            animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? -8 : 0 }}
             transition={{ duration: 0.3 }}
             className="block w-6 h-0.5 bg-(--text-main) origin-center"
           />

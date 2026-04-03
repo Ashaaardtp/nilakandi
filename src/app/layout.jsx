@@ -1,11 +1,8 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next"
 
 export default function RootLayout({ children }) {
   return (
-    <Analytics />
     <html lang="en">
       <head>
         <link
@@ -18,9 +15,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <Navbar />
+        <Analytics />
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );

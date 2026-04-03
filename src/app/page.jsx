@@ -1,3 +1,5 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Marquee from "../components/Marquee";
 import About from "../components/About";
@@ -9,6 +11,7 @@ import CTA from "../components/CTA";
 export default function Home() {
   return (
     <>
+      <Navbar />
       <Hero />
       <Marquee />
       <About />
@@ -17,6 +20,7 @@ export default function Home() {
       <HouseSketch />
       <Projects />
       <CTA />
+      <Footer />
     </>
   );
 }
